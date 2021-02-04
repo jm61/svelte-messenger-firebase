@@ -31,9 +31,11 @@
     .is-sender {
         text-align: left;
         margin-right: 7rem;
+        box-shadow: 3px 4px 3px rgba(0,0,0,.4);
     }
     .is-receiver {
         text-align: right;
         margin-left: 7rem;
+        box-shadow: 3px 4px 3px rgba(0,0,0,.4);
     }
 </style>

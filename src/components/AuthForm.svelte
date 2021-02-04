@@ -13,12 +13,12 @@
 }
 
 </script>
-<h1 class="title has-text-info has-text-centered">Svelte Firebase Chat</h1>
+
 <h2 class="is-size-3"> {mode === 'signIn' ? 'Sign In': 'Sign Up'} </h2>
 <form on:submit|preventDefault={handleSubmit}>
     <div class="field">
         <label for="email" class="label">Email
-            <input type="email" class="input" bind:value={email} placeholder="enter your email..." autocomplete="off" required>
+            <input type="email" class="input" bind:value={email} placeholder="enter your email..." autocomplete="on" required>
         </label>
     </div>
     <div class="field">

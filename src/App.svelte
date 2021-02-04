@@ -21,10 +21,11 @@
 </script>
 
 <main class="container section has-background-grey-light app">
+	<h1 class="title has-text-info has-text-centered">Svelte Firebase Chat</h1>
 	<FirebaseApp {firebase} >
 		<User let:user let:auth>
 			<Chats {user} />
-			Hello <mark class="has-text-centered">{user.email}</mark>
+			<mark class="has-text-centered">{user.email}</mark>
 			<button class="button is-fullwidth has-background-success" on:click={()=> auth.signOut()}>Sign Out</button>
 			<div slot="signed-out">
 				<AuthForm {auth} />
